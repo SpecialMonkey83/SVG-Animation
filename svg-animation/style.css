@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#svg-animation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 3.5s;
+}
+#svg-animation path:nth-child(1){
+    stroke-dasharray: 1997;
+    stroke-dashoffset: 1997;
+    animation: line-anim 2s ease forwards;
+}
+#svg-animation path:nth-child(2){
+    stroke-dasharray: 977px;
+    stroke-dashoffset: 977;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#svg-animation path:nth-child(3){
+    stroke-dasharray: 1209px;
+    stroke-dashoffset: 1209;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#svg-animation path:nth-child(4){
+    stroke-dasharray: 1219px;
+    stroke-dashoffset: 1219px;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#svg-animation path:nth-child(5){
+    stroke-dasharray: 977px;
+    stroke-dashoffset: 977px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#svg-animation path:nth-child(6){
+    stroke-dasharray: 1218px;
+    stroke-dashoffset: 1218px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#svg-animation path:nth-child(7){
+    stroke-dasharray: 689px;
+    stroke-dashoffset: 689px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#svg-animation path:nth-child(8){
+    stroke-dasharray: 1352px;
+    stroke-dashoffset: 1352px;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+#svg-animation path:nth-child(9){
+    stroke-dasharray: 1294px;
+    stroke-dashoffset: 1294px;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
